@@ -47,6 +47,7 @@ INSTALLED_APPS = [
   
   # my apps
   'users',
+  'auction',
 ]
 
 MIDDLEWARE = [
@@ -201,3 +202,6 @@ REST_FRAMEWORK = {
 REST_AUTH = {
 	"TOKEN_SERIALIZER": 'users.serializers.CustomTokenSerializer',
 }
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'pictures'
